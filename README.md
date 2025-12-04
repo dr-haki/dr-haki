@@ -1,4 +1,8 @@
-## Hi there 👋
+## Dr. Haki 
+
+Welcome to the Monorepo of Dr. Haki. 
+
+Feel free to explore the multiverse of apps and start growing your own food. Even if you are at Space!
 
 <!--
 **dr-haki/dr-haki** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
