@@ -7,14 +7,31 @@ assignees: dr-haki
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+### Describe Feature / Problem 
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+Describe here.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+### Scope 
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+Describe Scope 
+**Out of scope**: 
+
+### Proposed Solution 
+
+_void_
+
+### Alternatives Considered 
+
+_void_
+
+### Progress 
+
+- [ ] Step 1
+
+### Additional Context
+
+_void_
+
+### Sources 
+
+- [Example Link Title](https://) :: Explain briefly the value of this source.
