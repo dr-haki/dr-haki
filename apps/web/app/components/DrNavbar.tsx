@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./DrNavbar.scss";
 import { space_mono, dm_sans } from '../fonts/fonts';
+import { DrNavLink } from "./DrNavLink";
 
 const DrNavbar = () => {
   return (
@@ -10,19 +11,13 @@ const DrNavbar = () => {
             <Link className={`${space_mono.className} logo-title`} href="/">Dr<span>.</span>Haki</Link>
             <ul className="DrNavbar__container__list">
               <li>
-                <Link aria-current="page" className={`${space_mono.className} nav-link`} href="/">
-                    SHOWCASE 
-                </Link>
+                <DrNavLink href="/">SHOWCASE</DrNavLink>
               </li>
               <li>
-                <Link href="/docs">
-                  <p>LOGS</p>
-                </Link>
+                <DrNavLink href="/log">LOG</DrNavLink>
               </li>
               <li>
-                <Link href="/about">
-                  <p>ABOUT</p>
-                </Link>
+                <DrNavLink href="/about">ABOUT</DrNavLink>
               </li>
             </ul>
             <button>Button</button>
