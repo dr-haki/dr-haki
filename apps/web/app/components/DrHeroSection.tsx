@@ -1,8 +1,18 @@
+"use client"
 
+import { useRouter } from 'next/navigation';
 import { space_mono, dm_sans } from '../fonts/fonts';
+import { DrButton } from './DrButton';
 import "./DrHeroSection.scss";
 
 const DrHeroSection = () => {
+
+    const router = useRouter();
+
+    const navigateToLogs = () => {
+       router.push('/logs'); // Navigate to the Logs page
+    };
+  
   return (
     <main className="HeroSection">
         <section className="HeroSection__container">
@@ -17,14 +27,8 @@ const DrHeroSection = () => {
                 or track your Microgreens with the beta version of the Command Deck. 
             </p>
             <div className="HeroSection__buttons">
-                <button className="HeroSection__buttons__primary">
-                Get Started
-                </button>
-                <button
-                className="HeroSection__buttons__secondary"
-                >
-                Explore the logs
-                </button>
+                <DrButton variant="primary" onClick={navigateToLogs}>Get Started</DrButton>
+                <DrButton variant="secondary" onClick={navigateToLogs}>Explore the logs</DrButton>
             </div>
         </section>
     </main>

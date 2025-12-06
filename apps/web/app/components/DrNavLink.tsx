@@ -26,7 +26,7 @@ import { space_mono } from '../fonts/fonts';
  */
 export function DrNavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
-    <Link href={href} className={`Link--nav ${space_mono.className}`}>
+    <Link href={href} className={`Link Link--nav ${space_mono.className}`}>
       {children}
     </Link>
   );
