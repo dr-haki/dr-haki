@@ -18,13 +18,13 @@ const DrHeroSection = () => {
         <section className="HeroSection__container">
             <p className="japanese-subtitle" >技術と自然を融合させてスーパーフードを育てる。</p>
             <div className="HeroSection__title">
-                <div className={`${space_mono.className}`}>
+                <h1 className={`heading heading--hero ${space_mono.className}`}>
                 Mixing Technology and <br /> Nature to grow super food.
-                </div>
+                </h1>
             </div>
             <p className={`${dm_sans.className} HeroSection__description`}>
                 Follow the process on Dr. Haki Logs, <br />
-                or track your Microgreens with the beta version of the Command Deck. 
+                or track your Microgreens with the beta version of the HakiGrow app. 
             </p>
             <div className="HeroSection__buttons">
                 <DrButton variant="primary" onClick={navigateToLogs}>Get Started</DrButton>

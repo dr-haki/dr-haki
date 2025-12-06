@@ -16,9 +16,10 @@
         flex-direction: column; 
         justify-content: center; 
         align-items: center; 
+        margin-top: 4em;
 
         @media (min-width: 640px) { 
-        gap: 1.5rem; 
+           gap: 0rem; 
         }
     }
 
@@ -29,7 +30,7 @@
         color: clamp(40px,10vw,44px);
 
         @media (min-width: 640px) { 
-        color: 64px;
+            color: 64px;
         }
     }
 
@@ -38,8 +39,8 @@
         text-align: center; 
 
         @media (min-width: 640px) { 
-        width: 466px;
-        color: 18px;
+            width: 466px;
+            color: 18px;
         }
     }
 
@@ -49,9 +50,10 @@
         gap: 1.5rem; 
         justify-content: center; 
         align-items: center; 
+        margin-top: 2em;
 
         @media (min-width: 640px) { 
-        flex-direction: row; 
+            flex-direction: row; 
         }
 
         // TODO: export to global button styles
