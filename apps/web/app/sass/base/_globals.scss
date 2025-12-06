@@ -1,0 +1,170 @@
+
+@use '../utils/colors';
+
+html {
+  background: colors.$background;
+}
+
+body {
+  background: radial-gradient(colors.$background-gradient, colors.$background);
+  color: colors.$foreground;
+  box-sizing: border-box;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.7;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 1rem;
+
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(colors.$foreground-hover 1px, colors.$background 1px);
+  background-size: 133px 133px;
+  background-attachment: fixed;
+
+    @media (min-width: 820px) {
+      font-size: 1.1rem;
+    }
+}
+
+.page-wrapper {
+  padding: 4vh 3vw;  
+  max-width: 1366px;
+  margin: 0 auto;   
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: 820px) {
+      padding: 4vh 10vw;
+  }
+}
+  
+p {
+    margin: 2em 0.1em;
+}
+
+strong {
+  color: colors.$highlight-orange;
+}
+
+blockquote {
+  padding: 1.5em;
+  padding-left: 2em;
+  margin: 0;
+  font-size: 0.8em;
+  font-family: 'Space Mono';
+  background: colors.$callout;
+  color: colors.$callout-text;
+
+  p {
+    margin: 0;
+  }
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  margin: 1em 0;
+  background: colors.$divider;
+}
+
+ul {
+  padding-left: 2em;
+}
+
+ol {
+  @extend ul;
+}
+
+li {
+    list-style-type: square;
+}
+
+.obsidian-link {
+  padding: 0.1em 0.2em;
+  text-decoration: none;
+  color: colors.$highlight-violet;
+  &:hover {
+    color: colors.$background;
+    background: colors.$highlight-violet;
+  }
+}
+
+.home-link {
+  padding: 0.1em 0.2em;
+  text-decoration: none;
+  color: colors.$foreground-hover;
+
+  &:hover {
+    color: colors.$foreground;
+    background: colors.$highlight-green;
+  }
+}
+
+.nav-link {
+  padding: 0em 0.4em;
+  @extend .obsidian-link;
+  color: colors.$japanese;
+  letter-spacing: 12%;
+  font-size: 0.8em;
+
+  &:hover {
+    color: colors.$foreground;
+    background: colors.$background;
+  }
+}
+
+.logo-title {
+  @extend .nav-link;
+  color: colors.$foreground-hover;
+  margin-left: 0.5em;   
+  letter-spacing: 0%;
+  font-size: 1.1em;
+  font-weight: 700;
+  &:hover {
+    color: colors.$foreground;
+    background: colors.$background;
+  }
+  
+}
+
+.logo-title span {
+  color: colors.$highlight-green;
+}
+
+a {
+  padding: 0.1em 0.2em;
+  text-decoration: none;
+  color: colors.$highlight-green;
+  &:hover {
+    color: colors.$background;
+    background: colors.$highlight-green;
+  }
+  &.internal-link:after,
+  &.footnote:after,
+  &.reversefootnote:after {
+    content: "";
+  }
+}
+
+.main-list-posts {
+  padding-inline-start: 0px;
+}
+
+.main-list-posts li {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+
+code {
+  background: #f5f5f5;
+  padding: 0.1em 0.2em;
+  border-radius: 4px;
+}
+

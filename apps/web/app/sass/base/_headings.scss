@@ -1,0 +1,58 @@
+
+@use '../utils/colors';
+
+.heading {
+    color: colors.$heading;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    line-height: 1.3;
+    padding-bottom: 0;
+    font-family: "Space Mono";
+}
+
+.title-posts {
+  margin-top: 3.3em;
+  margin-bottom: 0em;
+}
+
+.japanese-subtitle {
+  font-weight: 200;
+  margin-top: 0em;
+  color: colors.$japanese;
+}
+
+// h1
+.heading-xxl {
+  @extend .heading;
+  font-size: 2em;
+}
+
+// h2
+.heading-xl {
+  @extend .heading;
+  font-size: 1.6em;
+}
+
+// h3
+.heading-l {
+  @extend .heading;
+  font-size: 1.2em;
+}
+
+// h4
+.heading-m {
+  @extend .heading;
+  font-size: 1em;
+}
+
+// h5
+.heading-s {
+  @extend .heading;
+  font-size: 0.8em;
+}
+
+// h6
+.heading-xs {
+  @extend .heading;
+  font-size: 0.8em;
+}

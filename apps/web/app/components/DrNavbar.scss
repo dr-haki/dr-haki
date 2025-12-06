@@ -1,0 +1,27 @@
+
+.DrNavbar {
+    position: sticky; 
+    top: 0; 
+    width: 100%; 
+    height: 5rem; 
+
+    &__container {
+        padding-left: 1rem;
+        padding-right: 1rem; 
+        height: 100%; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+
+        &__list {
+            display: none; 
+            column-gap: 1.5rem; 
+            color: #ffffff; 
+
+
+            @media (min-width: 768px) { 
+                display: flex; 
+            }
+        }
+    }
+}
