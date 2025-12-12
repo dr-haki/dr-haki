@@ -1,0 +1,34 @@
+@use '../sass/utils/colors';
+
+.DrNavbar {
+    position: sticky; 
+    top: 0; 
+    width: 100%; 
+    height: 5rem; 
+
+    &__container {
+        padding-left: 1rem;
+        padding-right: 1rem; 
+        height: 100%; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+
+        &__list {
+            display: none; 
+            column-gap: 1.5rem; 
+            color: #ffffff; 
+            padding-left: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+
+            @media (min-width: 768px) { 
+                display: flex; 
+            }
+        }
+
+        &__list li {
+            list-style-type: none; // remove bullets
+        }
+    }
+}

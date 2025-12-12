@@ -1,0 +1,36 @@
+
+@use '../sass/utils/colors';
+
+.DrButton {
+    border-radius: 12px;
+    padding: 0.8em 1.6em;
+    font-size: 0.7em;
+    font-weight: 300;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &--primary {
+        background-color: colors.$button-primary-bg;
+        color: colors.$dark-foreground;
+
+        &:hover {
+            background-color: colors.$button-primary-bg-hover;
+        }
+    }
+
+    &--secondary {
+        background-color: colors.$button-secondary-bg;
+        color: colors.$foreground;
+
+        &:hover {
+            background-color: colors.$button-secondary-bg-hover;
+        }
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+}
