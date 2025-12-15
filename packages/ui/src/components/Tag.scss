@@ -1,0 +1,39 @@
+@use "../../../styles/src/utils/colors";
+
+.reset-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+.Tag {
+    @extend .reset-button;
+
+    font-family: 'Space Mono';
+    color: colors.$japanese;
+    font-size: 0.8rem;
+    background-color: colors.$callout;
+    padding: 0.2em 0.6em;
+    margin-right: 0.4em;
+
+    &:hover {
+        color: colors.$background;
+        background-color: colors.$highlight-violet;
+    }
+}

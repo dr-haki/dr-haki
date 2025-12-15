@@ -1,7 +1,7 @@
-@use '../sass/utils/colors';
+@use "../../../styles/src/utils/colors";
 
 .DrNavbar {
-    position: sticky; 
+    position:initial;
     top: 0; 
     width: 100%; 
     height: 5rem; 
