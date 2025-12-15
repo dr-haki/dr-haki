@@ -21,21 +21,22 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
     <main>
       <div className="page-wrapper">
         <DrNavbar></DrNavbar>
-              <div className="post-wrapper">
-                  <article className="px-4 md:px-64 mb-32 col-span-12 lg:col-span-10 xl:col-span-8 lg:px-16" >
-                      <h1 className={`${space_mono.className} title-posts`} >{meta.title}</h1>
-                      <p className="japanese-subtitle" >{meta.japanese}</p>
-                      <Tags key={`Tags-key`} tags={meta.tags}></Tags>
-                      <hr/>
-                      <p className="text-gray-500 text-sm mb-6">{meta.date}</p>
-                      <div
-                        className="post-content prose prose-neutral prose-lg dark:prose-invert max-w-none leading-relaxed
-                                  prose-p:mb-6 prose-li:my-1 prose-blockquote:italic prose-blockquote:pl-4"
-                        dangerouslySetInnerHTML={{ __html: contentHtml }}
-                      />
+         <hr />
+        <div className="post-wrapper">
+            <article className="px-4 md:px-64 mb-32 col-span-12 lg:col-span-10 xl:col-span-8 lg:px-16" >
+                <h1 className={`${space_mono.className} title-posts`} >{meta.title}</h1>
+                <p className="japanese-subtitle" >{meta.japanese}</p>
+                <Tags key={`Tags-key`} tags={meta.tags}></Tags>
+                <hr/>
+                <p className="text-gray-500 text-sm mb-6">{meta.date}</p>
+                <div
+                  className="post-content prose prose-neutral prose-lg dark:prose-invert max-w-none leading-relaxed
+                            prose-p:mb-6 prose-li:my-1 prose-blockquote:italic prose-blockquote:pl-4"
+                  dangerouslySetInnerHTML={{ __html: contentHtml }}
+                />
 
-                  </article>
-              </div>
+            </article>
+        </div>
       </div>
       
       

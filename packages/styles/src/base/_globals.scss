@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background: radial-gradient(colors.$background-gradient, colors.$background);
+  background-color: colors.$background;
   color: colors.$foreground;
   box-sizing: border-box;
   font-weight: 300;
@@ -19,9 +19,9 @@ body {
   inset: 0;
   height: 100%;
   width: 100%;
-  background-image: radial-gradient(colors.$foreground-hover 1px, colors.$background 1px);
-  background-size: 133px 133px;
-  background-attachment: fixed;
+  background-image: url("../../../ui/src/assets/log-background.png");
+  background-repeat: no-repeat;
+  background-position: top 7.2em center;
 
     @media (min-width: 820px) {
       font-size: 1.1rem;
@@ -99,9 +99,34 @@ li {
 }
 
 
+/* For all <code> */
 code {
-  background: #f5f5f5;
-  padding: 0.1em 0.2em;
-  border-radius: 4px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+/* Code in text */
+p > code,
+li > code,
+dd > code,
+td > code {
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+  color: colors.$foreground-hover;
+}
+
+pre code {
+  display: block;
+  background: none;
+  background-color: colors.$code-background;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 2em 2em;
 }
 

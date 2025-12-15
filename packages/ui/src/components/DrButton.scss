@@ -11,7 +11,7 @@
 
     &--primary {
         background-color: colors.$button-primary-bg;
-        color: colors.$dark-foreground;
+        color: colors.$foreground;
 
         &:hover {
             background-color: colors.$button-primary-bg-hover;

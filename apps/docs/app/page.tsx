@@ -16,6 +16,7 @@ export default function Home() {
     <main>
       <div className="page-wrapper">
         <DrNavbar></DrNavbar>
+        <hr />
               <div className="post-wrapper">
                   <div className="px-4 md:px-64 mb-32 col-span-12 lg:col-span-10 xl:col-span-8 sm:col-span-12 lg:px-16"> 
                             <h1 className={`${space_mono.className} title-posts`} >Welcome to the Logs</h1>
