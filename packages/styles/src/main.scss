@@ -2,3 +2,9 @@
 @use './base/globals';
 @use './base/headings';
 @use './base/links';
+
+// components 
+@use "./components/DrButton";
+@use "./components/DrHeroSection";
+@use "./components/DrNavbar";
+@use "./components/Tag";

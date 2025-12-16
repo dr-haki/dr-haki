@@ -1,4 +1,4 @@
-import "./Tag.scss";
+
 import { Tag } from "./Tag";
 
 interface TagsProps {

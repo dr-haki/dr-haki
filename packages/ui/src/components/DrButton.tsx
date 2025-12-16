@@ -1,7 +1,6 @@
 "use client"
 
 import { space_mono } from '../fonts/fonts';
-import "./DrButton.scss";
 
 type DrButtonVariant = "primary" | "secondary";
 

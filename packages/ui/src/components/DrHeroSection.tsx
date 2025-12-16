@@ -3,7 +3,6 @@
 import { useRouter } from 'next/navigation';
 import { space_mono, dm_sans } from '../fonts/fonts';
 import { DrButton } from './DrButton';
-import "./DrHeroSection.scss";
 
 const DrHeroSection = () => {
 

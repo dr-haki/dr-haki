@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link";
-import "./DrNavbar.scss";
 import { space_mono, dm_sans } from '../fonts/fonts';
 import { DrNavLink } from "./DrNavLink";
 import { DrButton } from "./DrButton";

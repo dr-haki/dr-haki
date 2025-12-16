@@ -29,7 +29,7 @@ body {
 }
 
 .page-wrapper {
-  padding: 4vh 3vw;  
+  padding: 4vh 1vw;  
   max-width: 1366px;
   margin: 0 auto;   
   inset: 0;
@@ -43,7 +43,12 @@ body {
 }
 
 .post-wrapper {
-  padding: 1em 10em; 
+  @extend .page-wrapper;
+  padding: 4vh 6vw; 
+
+  @media (min-width: 820px) {
+      padding: 4vh 10vw;
+  }
 }
   
 p {
@@ -104,6 +109,7 @@ code {
   font-family: 'Space Mono', monospace;
   font-size: 0.8rem;
   line-height: 1.2;
+  background-color: colors.$code-background;
 }
 
 /* Code in text */
@@ -118,13 +124,18 @@ td > code {
   color: colors.$foreground-hover;
 }
 
+pre {
+  background-color: colors.$code-background;
+  overflow: hidden;
+}
+
 pre code {
   display: block;
-  background: none;
   background-color: colors.$code-background;
   white-space: pre;
   -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
+  overflow: hidden;
+  overflow-x: hidden;
   max-width: 100%;
   min-width: 100px;
   padding: 2em 2em;

@@ -24,9 +24,9 @@
 
 .Tag {
     @extend .reset-button;
-
+    cursor: pointer;
     font-family: 'Space Mono';
-    color: colors.$japanese;
+    color: colors.$highlight-violet;
     font-size: 0.8rem;
     background-color: colors.$callout;
     padding: 0.2em 0.6em;
